@@ -1,3 +1,8 @@
+/*
+ * This file is part of language pattern recognition network (LprNet), a program to find patterns in language like data-structures
+ * Copyright (C) 2022  Elija Giesbrecht
+ * Published under GPLv3-or-later license
+ */
 package language;
 
 import java.io.IOException;
