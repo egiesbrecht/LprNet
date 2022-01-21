@@ -17,7 +17,6 @@ import prNet.AspectManager;
 import prNet.BasePattern;
 import prNet.Comparison;
 import prNet.Pattern;
-import prNet.PatternSearch;
 import prNet.AspectManager.Aspect;
 import prNet.manipulable.ManipulablePattern;
 import prNet.manipulable.ManipulationUsage;
@@ -59,7 +58,7 @@ public class Manipulation {
     	List<Text> la=SQLlanguageOperations.loadTextsByAuthor(conn, allAuthors[3]);
     	Text t=la.get(0);
     	
-    	List<Pattern<Word>> pp=PatternSearch.findPatterns(com, t.getAllSentences());
+    	List<Pattern<Word>> pp=LanguagePatternUsage.findPatterns(com, t.getAllSentences());
     	General.print("before manipulation:");
     	LanguagePatternUsage.findMatchingAuthors(pp, asp, conn, false, 2).forEach((k, v)->General.print("\t"+k+" : "+v));
     	
@@ -75,7 +74,7 @@ public class Manipulation {
     		e.printStackTrace();
     	}
     	
-    	List<Pattern<Word>> pp2=PatternSearch.findPatterns(com, t.getAllSentences());
+    	List<Pattern<Word>> pp2=LanguagePatternUsage.findPatterns(com, t.getAllSentences());
     	General.print("", "after manipulation:");
     	LanguagePatternUsage.findMatchingAuthors(pp2, asp, conn, false, 2).forEach((k, v)->General.print("\t"+k+" : "+v));
 	}
