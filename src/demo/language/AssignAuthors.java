@@ -57,22 +57,5 @@ public class AssignAuthors {
     		LanguagePatternUsage.matchesOfAllAuthors(allAuthors, asName, conn, ignoreLow, calculationMode, printMode);
     		System.out.println();
     	}
-    	
-    	/*
-    	 * 04.01.2022:
-    	 * 
-    	 * Aspect "word":
-		 * Total:: matches:17 of 23 texts; 73.91304347826086%
-		 * 
-		 * Aspect "infinitiv":
-		 * Total:: matches:18 of 23 texts; 78.26086956521739%
-		 * 
-		 * Aspect "association":
-		 * Total:: matches:19 of 23 texts; 82.6086956521739%
-		 * 
-		 * Aspect "grammar":
-		 * Total:: matches:15 of 23 texts; 65.21739130434783%
-		 * 
-    	 */
 	}
 }
