@@ -18,7 +18,7 @@ import prNet.AspectManager;
 public class TranslateTexts {
 	public static void main(String[]args) throws ClassNotFoundException, SQLException, IOException {
 		Class.forName("org.sqlite.JDBC");
-    	Connection conn=DriverManager.getConnection("jdbc:sqlite:prNet-1.5-uniques.db");
+    	Connection conn=DriverManager.getConnection("jdbc:sqlite:prNet-1.5-language-demo.db");
     	Statement stat=conn.createStatement();
     	
     	String[] allAuthors=new String[] {

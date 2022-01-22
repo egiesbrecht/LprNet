@@ -19,7 +19,7 @@ import prNet.AspectManager.Aspect;
 public class AssignAuthors {
 	public static void main(String[]args) throws SQLException, ClassNotFoundException, IOException {
 		Class.forName("org.sqlite.JDBC");
-    	Connection conn=DriverManager.getConnection("jdbc:sqlite:prNet-1.5-uniques.db");
+    	Connection conn=DriverManager.getConnection("jdbc:sqlite:prNet-1.5-language-demo.db");
     	Statement stat=conn.createStatement();
     	
     	String[] allAuthors=new String[] {
