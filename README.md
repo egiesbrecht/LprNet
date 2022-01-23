@@ -1,8 +1,9 @@
 # LprNet
 An implementation of the prNet project to analyze the German language
 
-[About](#About)
-[prNet](#The-integration-of-prNet)
+- [About](#About)
+- [prNet](#The-integration-of-prNet)
+- [The database](#The-database)
 
 ## About
 LprNet uses the prNet-project to create a simple possibility to analyze the German language. The goal of this project is to test out how far pattern recognition can go with language-like constructs.
