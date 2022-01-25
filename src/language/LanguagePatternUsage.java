@@ -131,19 +131,6 @@ public abstract class LanguagePatternUsage extends PatternUsage {
 	}
 	
 	
-	
-	public static String createSentenceKey(Aspect<Word> aspect, List<Word> elements) {
-		String ret;
-		if(elements.size()<=0) return "{}";
-		ret="{"+aspect.keyFunction().apply(elements.get(0));
-		for(int i=1; i<elements.size(); i++) {
-			if(elements.get(i)==null) ret+=", *";
-			else ret+=", "+aspect.keyFunction().apply(elements.get(i));
-		}
-		return ret+"}";
-	}
-	
-	
 	private static void translateAndSaveAuthor(String author, Connection conn) throws IOException, SQLException {
 		Statement lstat=conn.createStatement();
 		List<Text> l=SQLlanguageOperations.translateDir("Autoren/"+author.replace(" ", "")+"/", author, lstat);
